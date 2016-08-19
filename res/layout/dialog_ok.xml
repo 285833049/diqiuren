@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_sahpe"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="提示"
+            android:textColor="@color/black1"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:paddingRight="5dp"
+            android:text="系统提示信息"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textColor="@color/dialog_text_c" />
+
+        <Button
+            android:id="@+id/dialog_simple_commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_dialog_seletor"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:textColor="@drawable/text_color_seletor"
+            android:gravity="center"
+            android:paddingLeft="25dp"
+            android:textSize="15sp"
+            android:paddingRight="25dp"
+            android:text="确定" />
+    </LinearLayout>
+
+</LinearLayout>

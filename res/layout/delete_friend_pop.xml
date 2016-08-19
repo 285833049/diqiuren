@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="165dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tanchubg"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/add_beizhu_set"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <ImageView
+            android:id="@+id/image_saomiao"
+            android:layout_width="@dimen/pop_item_image_w"
+            android:layout_height="@dimen/pop_item_image_h"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pop_item_iv_margin_left"
+            android:src="@drawable/shezhi_white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/image_saomiao"
+            android:gravity="center"
+            android:text="@string/pop_setting"
+            android:textColor="@color/wite"
+            android:textSize="@dimen/gy_text_title_size" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one165" 
+        android:id="@+id/line"/>
+
+    <RelativeLayout
+        android:id="@+id/delete_friend"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <ImageView
+            android:id="@+id/image_delete_friend"
+            android:layout_width="@dimen/pop_item_image_w"
+            android:layout_height="@dimen/pop_item_image_h"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pop_item_iv_margin_left"
+            android:src="@drawable/shanchu" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/image_delete_friend"
+            android:gravity="center"
+            android:text="@string/pop_delete"
+            android:textColor="@color/wite"
+            android:textSize="@dimen/gy_text_title_size" />
+    </RelativeLayout>
+    
+    <include layout="@layout/line_one165" 
+        android:id="@+id/line1"/>
+
+    <RelativeLayout
+        android:id="@+id/chat"
+        android:layout_width="match_parent"
+        android:layout_height="45dp" >
+
+        <ImageView
+            android:id="@+id/image_chat_friend"
+            android:layout_width="@dimen/pop_item_image_w"
+            android:layout_height="@dimen/pop_item_image_h"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pop_item_iv_margin_left"
+            android:src="@drawable/liaotian" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/image_chat_friend"
+            android:gravity="center"
+            android:text="@string/pop_chat"
+            android:textColor="@color/wite"
+            android:textSize="@dimen/gy_text_title_size" />
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/add_friend"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:visibility="gone"
+        >
+
+        <ImageView
+            android:id="@+id/image_add_friend"
+            android:layout_width="@dimen/pop_item_image_w"
+            android:layout_height="@dimen/pop_item_image_h"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pop_item_iv_margin_left"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/add_friend" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/image_add_friend"
+            android:gravity="center"
+            android:text="@string/pop_add_friend"
+            android:textColor="@color/wite"
+            android:textSize="@dimen/gy_text_title_size" />
+    </RelativeLayout>
+
+</LinearLayout>

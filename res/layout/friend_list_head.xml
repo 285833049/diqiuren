@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black_e"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_new_friend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/friend_new_h"
+        android:background="@drawable/list_item_selector"
+        android:paddingLeft="15dp"
+        android:paddingRight="1dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/shenq"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/new_friend_news"
+            android:textSize="@dimen/friend_text_size" />
+
+        <TextView
+            android:id="@+id/tv_addfriend_num"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/cicle_shape"
+            android:gravity="center"
+            android:textColor="@color/wite"
+            android:textSize="@dimen/friend_tips_text_size" />
+    </RelativeLayout>
+		
+    <RelativeLayout
+        android:id="@+id/friend_group_chat"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/friend_new_h"
+        android:background="@drawable/list_item_selector"
+        android:layout_marginTop="1px"
+        android:paddingLeft="15dp"
+        android:paddingRight="1dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:drawableLeft="@drawable/shenq"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:text="@string/group_chat"
+            android:textSize="@dimen/friend_text_size" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/black_e" />
+
+</LinearLayout>

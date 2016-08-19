@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myXml="http://schemas.android.com/apk/res/com.earthman.app"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/daohang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawablePadding="15dp"
+        android:drawableTop="@drawable/iconfont_daohang"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        android:text="@string/kuaijie"
+        android:textColor="@color/black2"
+        android:textSize="12sp" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@id/daohang"
+        android:scrollbars="none" >
+
+        <com.earthman.app.widget.NavigateLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal"
+            myXml:iconRes="@array/navigate_icons"
+            myXml:textRes="@array/navigate_names" />
+    </HorizontalScrollView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@id/horizontalScrollView"
+        android:layout_alignTop="@id/horizontalScrollView"
+        android:layout_toLeftOf="@+id/daohang"
+        android:background="@drawable/tuceng"
+        android:contentDescription="@string/app_name" />
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_background"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true" >
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/set_tx_alert_h"
+        android:layout_marginTop="@dimen/personal_detail_top_view"
+        android:paddingLeft="@dimen/main_margin_left_right" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/friend_activation_application"
+            android:textColor="@color/personal_detial_1"
+            android:textSize="@dimen/personal_tipst_textsize" />
+    </RelativeLayout>
+
+    <com.earthman.app.pulltoreflesh.XListView
+        android:id="@+id/tjhlist"
+        style="@style/CommonListViewTheme"
+        android:divider="@color/line_background"
+        android:background="@color/wite"
+        android:dividerHeight="1dp" >
+    </com.earthman.app.pulltoreflesh.XListView>
+
+</LinearLayout>

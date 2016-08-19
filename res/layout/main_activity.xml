@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/tab_text_hover" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="1dp"
+            android:text="@string/app_name"
+            android:textColor="@color/wite"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/light_btn_selector"
+            android:drawableRight="@drawable/jiahao"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp" />
+
+        <Button
+            android:id="@+id/btn_release_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/btn_add"
+            android:background="@drawable/light_btn_selector"
+            android:drawableRight="@drawable/fabu"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_edit_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/btn_add"
+            android:background="@drawable/light_btn_selector"
+            android:drawableRight="@drawable/ic_edit_circle"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black_6" />
+
+        <GridView
+            android:id="@+id/gv_tab"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:listSelector="@drawable/list_item_selector"
+            android:numColumns="6" />
+    </LinearLayout>
+
+</LinearLayout>

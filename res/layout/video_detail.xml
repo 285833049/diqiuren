@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_tab_bg" 
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:id="@+id/rl_video" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView 
+            android:id="@+id/iv_video"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pictures_no"
+            android:contentDescription="@string/app_name"/>
+        <Button 
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:background="@null"
+            android:drawableLeft="@drawable/ic_back"/>
+        
+        <ImageView 
+            style="@style/CommonViewTheme"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bofang"
+            android:contentDescription="@string/app_name"/>
+        
+    </RelativeLayout>
+    
+    <TextView 
+        android:id="@+id/tv_video_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"        
+        android:textSize="14sp"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:textColor="@color/black3"/>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:background="@color/white"
+        android:layout_marginTop="5dp">
+        <TextView 
+            android:id="@+id/tv_screenwriter"
+            style="@style/CommonViewTheme"
+            android:textColor="@color/weak_black"
+            android:textSize="12sp"/>
+        <TextView 
+            android:id="@+id/tv_introduce"
+            style="@style/CommonViewTheme"
+            android:textColor="@color/weak_black"
+            android:layout_marginTop="10dp"
+            android:textSize="12sp"/>
+        
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/messages_list_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <include layout="@layout/network_status_bar" />
+
+        <include layout="@layout/multiport_status_bar" />
+
+        <ListView
+            android:id="@+id/lvMessages"
+            style="@style/list_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dip"
+            android:fadingEdge="none" />
+
+        <RelativeLayout
+            android:id="@+id/emptyBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/emptyBg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:contentDescription="@string/empty"
+                android:src="@drawable/nim_messages_list_empty_bg" />
+
+            <TextView
+                android:id="@+id/message_list_empty_hint"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/emptyBg1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dip"
+                android:gravity="center" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/black_c" />
+
+    <LinearLayout
+        android:id="@+id/ll_clear_unread"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="@drawable/list_item_selector"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_clear_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/iconfont_record"
+            android:textColor="@color/blue"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/clear_unread"
+            android:textColor="@color/blue"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

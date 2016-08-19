@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_sahpe"
+        android:gravity="center_horizontal"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:text="@string/dynamic_fabu"
+        android:textColor="#17B7E5"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dialog_sahpe"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/wenzi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="@string/wenzi"
+            android:textColor="@color/dialog_text_c"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="@color/black_c" />
+
+        <TextView
+            android:id="@+id/pickphoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingBottom="13dp"
+            android:paddingTop="13dp"
+            android:text="@string/pick_photo"
+            android:textColor="@color/dialog_text_c"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/dialog_sahpe"
+        android:gravity="center_horizontal"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:text="@string/cancel"
+        android:textColor="@color/dialog_text_c"
+        android:textSize="14sp" />
+
+</LinearLayout>

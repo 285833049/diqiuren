@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/module_bg_selector" >
+
+    <com.earthman.app.widget.RoundCornerImageView
+        android:id="@+id/head_share"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="@dimen/main_margin_left_right"
+        android:layout_centerVertical="true"
+        android:src="@drawable/user_avatar" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/head_share"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/head_share"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/nickname_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/friend_name"
+            android:textSize="@dimen/friend_text_size" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/earth_man_code"
+                android:textColor="@color/friend_name"
+                android:textSize="@dimen/friend_text_size" />
+
+            <TextView
+                android:id="@+id/mine_share_cardid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/friend_name"
+                android:textSize="@dimen/friend_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

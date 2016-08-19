@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/search_bg"
+    android:orientation="horizontal" >
+
+    <Button
+        style="@style/CommonViewTheme"
+        android:background="@null"
+        android:drawableLeft="@drawable/search_drawable_selector"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" />
+
+    <View
+        android:layout_width="0.5dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/number6" />
+
+    <com.earthman.app.widget.sortListView.ClearEditText
+        android:id="@+id/filter_edit"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center_vertical"
+        android:hint="@string/input_keyword"
+        android:paddingLeft="15dp"
+        android:textColor="@color/black1"
+        android:textColorHint="@color/number6"
+        android:textSize="12sp" />
+
+   <!--  <ImageButton
+        android:id="@+id/search_clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="3dp"
+        android:background="@android:color/transparent"
+        android:padding="6dp"
+        android:src="@drawable/search_clear"
+        android:visibility="invisible" /> -->
+
+</LinearLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wite"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/title_layout" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_margin_left_right"
+        android:text="@string/chongzhi_tips"
+        android:textColor="@color/chongzhi_gray"
+        android:textSize="@dimen/chongzhi_textsize1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/chongzhi_no1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_shape_normal"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/chongzhi_2coin"
+            android:textSize="@dimen/chongzhi_textsize2" />
+
+        <TextView
+            android:id="@+id/chongzhi_no2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_shape_normal"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/chongzhi_10coin"
+            android:textSize="@dimen/chongzhi_textsize2" />
+
+        <TextView
+            android:id="@+id/chongzhi_no3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_shape_normal"
+            android:gravity="center"
+           android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/chongzhi_50coin"
+            android:textSize="@dimen/chongzhi_textsize2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_chongzhi_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/chongzhi_no4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_shape_normal"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/chongzhi_100coin"
+            android:textSize="@dimen/chongzhi_textsize2" />
+
+        <TextView
+            android:id="@+id/chongzhi_no5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_shape_normal"
+            android:gravity="center"
+           android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/chongzhi_200coin"
+            android:textSize="@dimen/chongzhi_textsize2" />
+
+        <EditText
+            android:id="@+id/chongzhi_no6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/text_shape_normal"
+            android:gravity="center"
+            android:cursorVisible="false"
+            android:numeric="integer" 
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:text="@string/chongzhi_extrycoin"
+            android:textSize="@dimen/chongzhi_textsize2" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/chongzhi_tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_margin_left_right"
+        android:textColor="@color/chongzhi_gray"
+        android:textSize="@dimen/chongzhi_textsize1" />
+
+    <Button
+        android:id="@+id/chongzhi_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/light_btn_selector"
+        android:gravity="center"
+        android:padding="@dimen/login_button_padding"
+        android:text="@string/chongzhi_liji_chongzhi"
+        android:textColor="@color/wite"
+        android:textSize="@dimen/regist_size" />
+
+</LinearLayout>

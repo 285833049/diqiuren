@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <com.earthman.app.widget.ProgressWebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hardwareAccelerated="true"
+        android:layerType="software"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

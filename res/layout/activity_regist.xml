@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true" >
+
+    <include layout="@layout/title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/choose_province"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_item_h"
+                android:background="@color/wite" >
+
+                <ImageView
+                    android:id="@+id/login_iv_1"
+                    style="@style/regist_item_image_style"
+                    android:src="@drawable/dizhi" />
+
+                <TextView
+                    android:id="@+id/regist_user_address"
+                    style="@style/regist_item_edittext_style"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/ll_right_address"
+                    android:layout_toRightOf="@+id/login_iv_1"
+                    android:gravity="center_vertical"
+                    android:hint="@string/chose_address" />
+
+                <LinearLayout
+                    android:id="@+id/ll_right_address"
+                    style="@style/regiet_item_img_right_style"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <ImageView
+                        style="@style/regiet_item_img_right_style"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <include layout="@layout/line_two" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_item_h"
+                android:background="@color/wite" >
+
+                <ImageView
+                    android:id="@+id/login_iv_2"
+                    style="@style/regist_item_image_style"
+                    android:src="@drawable/yonghu" />
+
+                <EditText
+                    android:id="@+id/regist_user_nick"
+                    style="@style/regist_item_edittext_style"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/login_iv_2"
+                    android:hint="@string/nick" />
+
+                <ImageView
+                    style="@style/regiet_item_img_right_style"
+                    android:src="@drawable/right"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_two" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_item_h"
+                android:background="@color/wite" >
+
+                <ImageView
+                    android:id="@+id/login_iv_3"
+                    style="@style/regist_item_image_style"
+                    android:src="@drawable/shouji" />
+
+                <EditText
+                    android:id="@+id/regist_user_phone"
+                    style="@style/regist_item_edittext_style"
+                    android:layout_height="match_parent"
+                    android:layout_toLeftOf="@+id/regist_getcode"
+                    android:layout_toRightOf="@+id/login_iv_3"
+                    android:hint="@string/phone_num"
+                    android:maxLength="11"
+                    android:inputType="phone" />
+
+                <TextView
+                    android:id="@+id/regist_getcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/main_margin_left_right"
+                    android:background="@drawable/rect_yuanjiao"
+                    android:gravity="center"
+                    android:paddingBottom="6dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="6dp"
+                    android:text="获取验证码"
+                    android:textColor="@color/wite"
+                    android:textSize="@dimen/regist_text_size" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_two" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_item_h"
+                android:background="@color/wite" >
+
+                <ImageView
+                    android:id="@+id/login_iv_4"
+                    style="@style/regist_item_image_style"
+                    android:src="@drawable/yanzhengma" />
+
+                <EditText
+                    android:id="@+id/regist_user_code"
+                    style="@style/regist_item_edittext_style"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/login_iv_4"
+                    android:maxLength="6"
+                    android:hint="@string/code" />
+
+                <ImageView
+                    style="@style/regiet_item_img_right_style"
+                    android:src="@drawable/right"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_two" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_item_h"
+                android:background="@color/wite" >
+
+                <ImageView
+                    android:id="@+id/login_iv_5"
+                    style="@style/regist_item_image_style"
+                    android:src="@drawable/mima" />
+
+                <EditText
+                    android:id="@+id/regist_user_psw_1"
+                    style="@style/regist_item_edittext_style"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/login_iv_5"
+                    android:hint="@string/password"
+                    android:inputType="textPassword" />
+
+                <ImageView
+                    style="@style/regiet_item_img_right_style"
+                    android:src="@drawable/right"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_two" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_item_h"
+                android:background="@color/wite" >
+
+                <ImageView
+                    android:id="@+id/login_iv_6"
+                    style="@style/regist_item_image_style"
+                    android:src="@drawable/mima" />
+
+                <EditText
+                    android:id="@+id/regist_user_psw_2"
+                    style="@style/regist_item_edittext_style"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/login_iv_6"
+                    android:hint="@string/password2"
+                    android:inputType="textPassword" />
+
+                <ImageView
+                    style="@style/regiet_item_img_right_style"
+                    android:src="@drawable/right"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_two" />
+
+            <RelativeLayout
+                android:id="@+id/ll_right_birthday"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_item_h"
+                android:background="@color/wite" >
+
+                <ImageView
+                    android:id="@+id/login_iv_7"
+                    style="@style/regist_item_image_style"
+                    android:src="@drawable/riqi" />
+
+                <TextView
+                    android:id="@+id/regist_user_birthday"
+                    style="@style/regist_item_edittext_style"
+                    android:layout_width="wrap_content"
+                    android:layout_toRightOf="@+id/login_iv_7"
+                    android:hint="@string/birthday" />
+
+                <LinearLayout
+                    style="@style/regiet_item_img_right_style"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center" >
+
+                    <ImageView
+                        style="@style/regiet_item_img_right_style"
+                        android:layout_gravity="center"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <include layout="@layout/line_two" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="@dimen/main_margin_left_right"
+                android:text="@string/notice"
+                android:textColor="@color/notice_color"
+                android:textSize="@dimen/regist_text_size" />
+
+            <RelativeLayout
+                android:id="@+id/regist_to_friend"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_item_h"
+                android:background="@color/wite" >
+
+                <ImageView
+                    android:id="@+id/login_iv_8"
+                    style="@style/regist_item_image_style"
+                    android:src="@drawable/yonghu" />
+
+                <EditText
+                    android:id="@+id/regist_friend_id"
+                    style="@style/regist_item_edittext_style"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@+id/login_iv_8"
+                    android:hint="@string/nick" />
+
+                <ImageView
+                    style="@style/regiet_item_img_right_style"
+                    android:src="@drawable/right"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/regist_user_next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/light_btn_selector"
+                android:gravity="center"
+                android:padding="@dimen/login_button_padding"
+                android:text="@string/regist"
+                android:textColor="@color/wite"
+                android:textSize="@dimen/regist_size" />
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/vMasker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:background="#e0000000" />
+
+</LinearLayout>

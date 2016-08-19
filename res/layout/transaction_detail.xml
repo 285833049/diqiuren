@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wite"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@color/wite" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/transaction_type" />
+
+        <TextView
+            android:id="@+id/transaction_type_text"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/main_margin_left_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@color/wite" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/transaction_time" />
+
+        <TextView
+            android:id="@+id/transaction_time_text"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/main_margin_left_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@color/wite" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/transaction_money" />
+
+        <TextView
+            android:id="@+id/transaction_money_text"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+            android:textColor="#FF6C00" />
+
+        <TextView
+            android:id="@+id/transaction_pay_type"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/transaction_money_text"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+            android:text="地球币"
+            android:textColor="@color/weak_black"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@color/wite" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/transaction_payment_method" />
+
+        <ImageView
+            android:id="@+id/transaction_method_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="80dp" />
+
+        <TextView
+            android:id="@+id/transaction_method_text"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/main_margin_left_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:id="@+id/rl_otheraccount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@color/wite" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/transation_her_account" />
+
+        <TextView
+            android:id="@+id/transaction_nick_text"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/main_margin_left_right" />
+
+        <TextView
+            android:id="@+id/textView1"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/transaction_nick_text"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+            android:text="AA0000006"
+            android:textSize="12sp" />
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            android:layout_toLeftOf="@+id/textView1"
+            android:text="@string/earth_man_ID"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+</LinearLayout>

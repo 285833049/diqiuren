@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/hongbao" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:text="地球币"
+            android:textColor="@color/black_3"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:text="可用地球币256个"
+            android:textColor="@color/black_9"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_selected_flag"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:layout_marginRight="15dp"
+            android:text="@string/iconfont_selected"
+            android:textColor="@color/blue" />
+        
+    </RelativeLayout>
+
+</RelativeLayout>

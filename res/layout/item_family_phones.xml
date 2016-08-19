@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_qinqqing_alph"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp" >
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="#F2EBEB" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/family_itembg_shape" >
+
+        <com.earthman.app.widget.CircleImageView
+            android:id="@+id/user_avatar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/avatar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/user_avatar"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="爸爸"
+                android:textColor="@color/black4"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/user_cardid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="地球人代码：AA001010"
+                android:textColor="@color/black5"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/user_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:text="绑定手机号：12124454747"
+                android:textColor="@color/black5"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:background="@color/wite"
+    android:orientation="vertical"
+    android:paddingBottom="20dp" >
+
+    <TextView
+        android:id="@+id/tv_should_pay"
+        style="@style/CommonViewTheme"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/main_tab_bg" />
+
+    <com.earthman.app.widget.MyListView
+        android:id="@+id/lv_pay"
+        style="@style/CommonListViewTheme"
+        android:divider="@color/main_tab_bg"
+        android:dividerHeight="0.2dp" >
+    </com.earthman.app.widget.MyListView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/btn_life_pay"
+            style="@style/CommonButton"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:text="@string/go_pay" />
+
+        <Button
+            android:id="@+id/btn_year_pay"
+            style="@style/CommonButton"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:text="@string/go_pay" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_pay_later"
+        style="@style/CommonButton"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/gray_btn_selector"
+        android:text="@string/go_pay_later" />
+
+</LinearLayout>

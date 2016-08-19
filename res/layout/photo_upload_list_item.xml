@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/list_item_selector"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+       
+         >
+
+        <ImageView
+            android:id="@+id/iv_upload_list_image"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="3dp"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_upload_list_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/iv_upload_list_image"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="上传到《cs》"
+            android:textColor="@color/black4"
+            android:textSize="14sp" />
+
+        <ProgressBar
+            android:id="@+id/pb_upload_list_progressbar"
+            style="@style/StyleProgressBarMini"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_upload_list_image"
+            android:layout_marginLeft="10dp"
+             android:layout_marginRight="10dp"
+            android:layout_toRightOf="@id/iv_upload_list_image"
+            android:background="@drawable/photo_shape_progressbar_bg"
+            android:max="100"/>
+
+        <TextView
+            android:id="@+id/tv_upload_list_descript"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/pb_upload_list_progressbar"
+            android:layout_marginBottom="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/iv_upload_list_image"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="50%"
+            android:textColor="@color/black5"
+            android:textSize="12sp" />
+    </RelativeLayout>

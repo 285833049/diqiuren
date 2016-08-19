@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/griditems_bg" >
+
+    <TextView
+        android:id="@+id/tv_item"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="爸爸"
+        android:textColor="@color/commo_text_color"
+        android:textSize="14.0sp" />
+
+</RelativeLayout>

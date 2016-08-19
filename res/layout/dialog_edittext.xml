@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/personal_detail_shape"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/hint"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" >
+
+            <EditText
+                android:id="@+id/et_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@null"
+                android:hint="@string/please_enter"
+                android:padding="5dp"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_below="@id/et_content"
+                android:background="@drawable/blue_line" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/group_detail_pay"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_left"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/cancle"
+                android:textColor="@color/black_6"
+                android:textSize="12sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="#EEEEEE" />
+
+            <Button
+                android:id="@+id/btn_right"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textColor="@color/black_6"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

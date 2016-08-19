@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_qinqqing"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true">
+
+    <com.earthman.app.widget.MyScrollView
+        android:layout_width="match_parent"
+        android:scrollbars="@null"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/qinqinghbg"
+                android:orientation="vertical" >
+
+                <com.earthman.app.widget.RoundCornerImageView
+                    android:id="@+id/user_icon"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"	
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="80dp"
+                    android:src="@drawable/avatar" />
+
+                <View
+                    android:id="@+id/lin_1"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:visibility="gone"
+                    android:background="#F2EBEB" />
+            </LinearLayout>
+
+            <com.earthman.app.widget.MyListView
+                android:id="@+id/lv_familys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_qinqqing_alph"
+                android:divider="@null" >
+            </com.earthman.app.widget.MyListView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/bg_qinqqing"
+                android:orientation="vertical" >
+
+                <com.earthman.app.widget.MyGridView
+                    android:id="@+id/relative_grideview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/main_margin_left_right"
+                    android:background="@color/bg_qinqqing"
+                    android:horizontalSpacing="@dimen/main_margin_20"
+                    android:listSelector="@drawable/pressedseletor"
+                    android:numColumns="3"
+                    android:padding="@dimen/main_margin_left_right"
+                    android:verticalSpacing="@dimen/main_margin_20" >
+                </com.earthman.app.widget.MyGridView>
+            </LinearLayout>
+        </LinearLayout>
+    </com.earthman.app.widget.MyScrollView>
+
+    <include layout="@layout/title_layout2" />
+
+</RelativeLayout>

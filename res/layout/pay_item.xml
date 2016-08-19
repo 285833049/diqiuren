@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tv_pay_relay" >
+
+    <TextView
+        android:id="@+id/pay_style_name"
+        style="@style/CommonViewTheme"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+        android:drawablePadding="15dp"
+        android:textColor="@color/black1"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/money"
+        style="@style/CommonViewTheme"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/pay_style_name"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        style="@style/CommonViewTheme"
+        android:layout_alignParentRight="true"
+        android:button="@drawable/checkbox_selector"
+        android:paddingBottom="15dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="25dp"
+        android:paddingTop="15dp" />
+
+</RelativeLayout>

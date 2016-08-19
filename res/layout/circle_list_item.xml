@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/module_bg_selector"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/mice_personal_data_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <com.earthman.app.widget.CircleImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/friend_icon_h_w"
+            android:layout_height="@dimen/friend_icon_h_w"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/main_margin_left_right"
+            android:src="@drawable/avatar" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/iv_head"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="仙女妹妹："
+                android:textColor="@color/mine_textcolor"
+                android:textSize="@dimen/friend_text_size" />
+
+            <TextView
+                android:id="@+id/tv_earth_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:text="地球人代码:AA000001"
+                android:textColor="@color/mine_textcolor"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+</LinearLayout>

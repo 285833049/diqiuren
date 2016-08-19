@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true" >
+
+    <include layout="@layout/title_layout" />
+
+    <EditText
+        android:id="@+id/death_et"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:hint="@string/death_et_hint"
+        android:gravity="top"
+        android:textSize="11sp"
+        android:padding="@dimen/main_margin_left_right"
+        android:layout_margin="@dimen/main_margin_left_right"
+        android:background="@drawable/edit_text_shape" />
+
+    <TextView
+        android:id="@+id/edittext_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/main_margin_left_right"
+        android:layout_marginRight="@dimen/main_margin_left_right"
+        android:text="总字数300个字,剩余300字"
+        android:textColor="@color/black_3"
+        android:textSize="11sp" />
+
+    <Button
+        android:id="@+id/btn_commit_jiyu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/light_btn_selector"
+        android:gravity="center"
+        android:padding="@dimen/login_button_padding"
+        android:text="@string/commit"
+        android:textColor="@color/wite"
+        android:textSize="@dimen/regist_size" />
+
+</LinearLayout>

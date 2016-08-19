@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/qrcode_bg"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="30dp"
+    android:paddingBottom="10dp">
+    <com.earthman.app.widget.RoundCornerImageView 
+        android:id="@+id/head_img"
+        android:layout_width="@dimen/personal_heads_img"
+        android:layout_height="@dimen/personal_heads_img"/>
+   <TextView 
+       android:id="@+id/tv_nickname"
+       style="@style/CommonViewTheme"
+       android:textColor="@color/black1"
+       android:textSize="12sp"
+       android:layout_toRightOf="@id/head_img"
+       android:layout_marginLeft="15dp"/>
+   <TextView 
+       android:id="@+id/tv_id"
+       style="@style/CommonViewTheme"
+       android:textColor="@color/weak_black"
+       android:textSize="12sp"
+       android:layout_toRightOf="@id/head_img"
+       android:layout_marginLeft="15dp"
+       android:layout_below="@id/tv_nickname"
+       android:layout_marginTop="10dp"/>
+   
+   <Button android:id="@+id/btn_share"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentRight="true"
+       android:background="@null"
+       android:drawableRight="@drawable/share_green"/>
+   
+   <RelativeLayout android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/rl_qrcode"
+       android:layout_below="@id/head_img"
+       android:layout_marginTop="15dp">
+       <ImageView 
+           android:id="@+id/img_qrcode"
+           android:contentDescription="@string/app_name"
+           style="@style/CommonViewTheme"           
+           android:layout_centerInParent="true"/>
+   </RelativeLayout>
+   
+   <TextView style="@style/CommonViewTheme"
+       android:layout_below="@id/rl_qrcode"
+       android:layout_marginTop="15dp"
+       android:textSize="12sp"
+       android:textColor="@color/black5"
+       android:layout_centerHorizontal="true"
+       android:text="@string/qrcode_inform"/>"
+
+</RelativeLayout>

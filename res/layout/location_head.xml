@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout       
+        android:id="@+id/rl_no_poi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_not_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:text="@string/donot_show_locaiton"
+            android:textColor="@color/tab_text_hover"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_no_poi"
+            style="@style/CommonViewTheme"
+            android:layout_alignParentRight="true"
+            android:layout_margin="15dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/xuanzhong_small"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_not_show"
+            android:background="@color/weak_black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" 
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/current_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:textColor="@color/black5"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_city"
+            style="@style/CommonViewTheme"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/xuanzhong_small"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/current_city"
+            android:background="@color/weak_black" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_last_poi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"       
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/CommonViewTheme"
+            android:textColor="@color/black5"
+            android:paddingLeft="15dp"
+            android:paddingTop="15dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            style="@style/CommonViewTheme"
+            android:layout_below="@id/tv_title"
+            android:textColor="@color/weak_black"
+            android:paddingLeft="15dp"
+            android:paddingBottom="15dp"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_item"
+            style="@style/CommonViewTheme"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/xuanzhong_small"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@id/tv_address"
+            android:background="@color/weak_black" />
+    </RelativeLayout>
+
+</LinearLayout>

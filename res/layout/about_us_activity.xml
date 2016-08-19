@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+        
+        <TextView
+            android:id="@+id/tv_environment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="当前为开发测试环境"
+            android:textSize="14sp"
+            android:textColor="@color/red"
+            />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="107dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#ff432b08"
+            android:text="Version 1.8.1"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_qrcode" >
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/ic_qrcode_download" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="扫描二维码，您的朋友也可以下载地球人客户端"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_website"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:text="官方网站：http://www.dqr2015.com/"
+            android:textColor="#0000FF"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="客服电话：400-960-1600"
+            android:textColor="#999999"
+            android:textSize="12sp"
+            android:textStyle=""
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="13dp"
+            android:gravity="center"
+            android:text="湖南球谱科技有限公司\n\nCopyright©2015-2016 地球人.All Rights Reserved"
+            android:textColor="#ff432b08"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+</LinearLayout>

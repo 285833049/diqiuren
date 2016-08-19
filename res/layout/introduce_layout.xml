@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@android:color/white"
+    android:paddingBottom="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="25dp"
+    android:paddingTop="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/home_introduce_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/iconfont_diqiuyi"
+            android:drawablePadding="6dp"
+            android:text="@string/comany_introduce"
+            android:textColor="@color/black1"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/iv_introduce"
+            android:layout_width="154dp"
+            android:layout_height="105dp"
+            android:layout_below="@id/tv_introduce"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/home_introduce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@id/iv_introduce"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_introduce"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="6"
+            android:text="的开始发生的浪费"
+            android:textColor="@color/black2"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/account_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@drawable/module_bg_selector" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/tx_account_balance" />
+
+        <TextView
+            android:id="@+id/personal_withdrawal_moneys"
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="100dp"
+            android:text="500"
+            android:textColor="@color/red1" />
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="130dp"
+            android:text="地球币" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="5dp"
+        android:background="#f4f7f7" />
+
+    <RelativeLayout
+        android:id="@+id/card_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@drawable/module_bg_selector"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/personal_withdrawal_card"
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="55dp"
+            android:gravity="center"
+            android:text="招商银行－储蓄卡(尾号3333)" />
+
+        <ImageView
+            style="@style/regiet_item_img_right_style"
+            android:layout_gravity="center"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:id="@+id/chongzhi_myaccount"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#f4f7f7" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/present_prompt" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_item_h"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="@string/cash_withdrawal_amount"
+            android:textColor="@color/mine_textcolor"
+            android:textSize="@dimen/personal_tipst_textsize" />
+
+        <EditText
+            android:id="@+id/personal_withdrawal_moneynum"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/personal_margin_left"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/maximum_withdrawal_500"
+            android:maxLength="3"
+            android:numeric="integer"
+            android:textColor="@color/personal_detial_2"
+            android:textSize="@dimen/personal_tipst_textsize" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/personal_withdrawal_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/light_btn_selector"
+        android:gravity="center"
+        android:padding="@dimen/login_button_padding"
+        android:text="@string/personal_withdrawals"
+        android:textColor="@color/wite"
+        android:textSize="@dimen/regist_size" />
+
+</LinearLayout>

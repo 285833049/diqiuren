@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_tab_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_banner_container"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="180dp"/>
+
+    <com.earthman.app.widget.HorizontalListView
+        android:id="@+id/navigate"
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="110dp" />
+
+    <!-- 公司介绍 -->
+
+    <include layout="@layout/introduce_layout" />
+
+    <include layout="@layout/news_layout" />
+
+    <include layout="@layout/video_layout" />
+
+    <include layout="@layout/paihang_layout" />
+
+</LinearLayout>

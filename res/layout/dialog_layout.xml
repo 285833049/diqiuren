@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/personal_detail_shape"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="40.0dip"
+            android:gravity="center"
+            android:text="@string/permission_settings"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/public_information" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/payment_information" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:gravity="center_vertical"
+                    android:text="@string/five_level_protection" />
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/radio_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <RadioButton
+                    android:id="@+id/cb1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/selector_btn"
+                    android:button="@null"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/cb2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/selector_btn"
+                    android:button="@null"
+                    android:checked="false" />
+
+                <RadioButton
+                    android:id="@+id/cb3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="22dp"
+                    android:background="@drawable/selector_btn"
+                    android:button="@null"
+                    android:checked="false" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/group_detail_pay"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/personal_detail_set_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/cancel" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/personal_detail_set_ok"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/determine" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

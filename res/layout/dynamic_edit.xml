@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/wite"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <EditText
+        android:id="@+id/dynamic_et"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/dynamic_1"
+        android:padding="10dp"
+        android:maxLength="300"
+        android:textColorHint="@color/black_9"
+        android:textSize="@dimen/mine_text_size_big" />
+
+    <TextView
+        android:id="@+id/tv_dynamic_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/main_margin_left_right"
+        android:gravity="right"
+        android:textColor="@color/black_c"
+        android:textSize="13sp" />
+
+    <include layout="@layout/line_one_gray" />
+    
+    <TextView 
+        android:id="@+id/tv_current_location"
+        style="@style/CommonViewTheme"
+        android:textSize="14sp"
+        android:text="@string/current_location"
+        android:padding="15dp"
+        />
+
+    <GridView
+        android:id="@+id/grideview_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/main_margin_left_right"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="5dp"
+        android:numColumns="4"
+        android:scrollbars="@null" >
+    </GridView>
+
+</LinearLayout>

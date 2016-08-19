@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/personal_pay_to_see_1" >
+
+            <TextView
+                android:id="@+id/transaction_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="充值地球币"
+                android:textColor="@color/black4"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/transaction_money"
+                style="@style/CommonViewTheme"
+                android:layout_alignParentRight="true"
+                android:text="＋100"
+                android:textColor="@color/tab_text_hover"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/personal_pay_to_see_1" >
+
+            <TextView
+                android:id="@+id/transaction_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="2016-03-06"
+                android:textColor="@color/number6"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/transaction_type"
+                style="@style/CommonViewTheme"
+                android:layout_alignParentRight="true"
+                android:text="地球人币"
+                android:textColor="@color/number6"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/personal_pay_to_see_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+</RelativeLayout>

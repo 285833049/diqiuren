@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_tab_bg"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true" >
+
+    <include layout="@layout/title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/account_pwd_modifca"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_item_h"
+                android:background="@color/main_tab_bg" >
+
+                <TextView
+                    style="@style/mine_item_text_style"
+                    android:layout_marginLeft="@dimen/main_margin_left_right"
+                    android:text="@string/franchise_application_alert"
+                    android:textColor="@color/personal_title_red" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_one_gray" />
+
+            <RelativeLayout
+                android:id="@+id/payment_pwd_modifica"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_item_h"
+                android:background="@drawable/module_bg_selector" >
+
+                <TextView
+                    style="@style/mine_item_text_style"
+                    android:layout_marginLeft="@dimen/main_margin_left_right"
+                    android:text="@string/myaccount_info_id" />
+
+                <EditText
+                    android:id="@+id/personal_detail_earthid"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/personal_margin_left"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="@string/input_earth_id"
+					android:maxLength="12"
+                    android:textColor="@color/personal_detial_1"
+                    android:textSize="@dimen/personal_tipst_textsize" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/main_tab_bg" />
+
+            <RelativeLayout
+                android:id="@+id/franchise_application_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/set_tx_alert_h"
+                android:layout_marginTop="10dp"
+                android:background="@color/main_tab_bg" >
+
+                <TextView
+                    style="@style/mine_item_text_style"
+                    android:layout_marginLeft="@dimen/main_margin_left_right"
+                    android:text="@string/application_conditions"
+                    android:textColor="@color/personal_detial_1"
+                    android:textSize="@dimen/cz_dialog_normal" />
+            </RelativeLayout>
+
+            <TextView
+                style="@style/mine_item_text_style"
+                android:layout_marginLeft="@dimen/main_margin_left_right"
+                android:text="@string/application_conditions_one"
+                android:textColor="@color/personal_detial_1"
+                android:textSize="@dimen/cz_dialog_normal" />
+
+            <TextView
+                style="@style/application_text_style"
+                android:layout_marginLeft="@dimen/main_margin_left_right"
+                android:text="@string/application_conditions_two"
+                android:textColor="@color/personal_detial_1"
+                android:textSize="@dimen/cz_dialog_normal" />
+
+            <TextView
+                style="@style/application_text_style"
+                android:layout_marginLeft="@dimen/main_margin_left_right"
+                android:text="@string/application_conditions_three"
+                android:textColor="@color/personal_detial_1"
+                android:textSize="@dimen/cz_dialog_normal" />
+
+            <TextView
+                style="@style/application_text_style"
+                android:layout_marginLeft="@dimen/main_margin_left_right"
+                android:text="@string/application_conditions_for"
+                android:textColor="@color/personal_detial_1"
+                android:textSize="@dimen/cz_dialog_normal" />
+
+            <TextView
+                style="@style/application_text_style"
+                android:layout_marginLeft="@dimen/main_margin_left_right"
+                android:text="@string/application_conditions_five"
+                android:textColor="@color/personal_detial_1"
+                android:textSize="@dimen/cz_dialog_normal" />
+
+            <TextView
+                style="@style/application_text_style"
+                android:layout_marginLeft="@dimen/main_margin_left_right"
+                android:text="@string/application_conditions_six"
+                android:textColor="@color/personal_detial_1"
+                android:textSize="@dimen/cz_dialog_normal" />
+
+            <TextView
+                style="@style/application_text_style"
+                android:layout_marginLeft="@dimen/main_margin_left_right"
+                android:text="@string/application_conditions_summary"
+                android:textColor="@color/personal_detial_1"
+                android:textSize="@dimen/cz_dialog_normal" />
+
+            <Button
+                android:id="@+id/franchise_application_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/light_btn_selector"
+                android:gravity="center"
+                android:padding="@dimen/login_button_padding"
+                android:text="@string/regist"
+                android:textColor="@color/wite"
+                android:textSize="@dimen/regist_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_background"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true" >
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_heads_img"
+        android:background="@color/wite"
+        android:paddingLeft="@dimen/main_margin_left_right"
+        android:paddingRight="1dp" >
+
+        <EditText
+            android:id="@+id/phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+             android:layout_alignParentLeft="true"
+            android:gravity="center_vertical"
+            android:inputType="phone"
+            android:layout_toLeftOf="@+id/chongzhi_huafei"
+            android:hint="@string/enter_phone_number"
+            android:textColor="@color/black5"
+            android:textSize="@dimen/personal_tipst_textsize" />
+
+        <ImageView
+            android:id="@+id/chongzhi_huafei"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:src="@drawable/tongxunlu" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/huafei_no1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/chongzhi_phone"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/huafei_50yuan"
+            android:textColor="@drawable/text_color_seletor"
+            android:textSize="@dimen/chongzhi_textsize2" />
+
+        <TextView
+            android:id="@+id/huafei_no2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/chongzhi_phone"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/huafei_100yuan"
+            android:textColor="@drawable/text_color_seletor"
+            android:textSize="@dimen/chongzhi_textsize2" />
+
+        <TextView
+            android:id="@+id/huafei_no3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/chongzhi_phone"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/huafei_200yuan"
+            android:textColor="@drawable/text_color_seletor"
+            android:textSize="@dimen/chongzhi_textsize2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_huafei_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/huafei_no4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/chongzhi_phone"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/huafei_300yuan"
+            android:textColor="@drawable/text_color_seletor"
+            android:textSize="@dimen/chongzhi_textsize2" />
+
+        <TextView
+            android:id="@+id/huafei_no5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/chongzhi_phone"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:text="@string/huafei_500yuan"
+            android:textColor="@drawable/text_color_seletor"
+            android:textSize="@dimen/chongzhi_textsize2" />
+
+        <TextView
+            android:id="@+id/huafei_no6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/chongzhi_phone"
+            android:enabled="false"
+            android:gravity="center"
+            android:paddingBottom="15dp"
+            android:paddingTop="15dp"
+            android:visibility="invisible"
+            android:text="@string/huafei_300yuan"
+            android:textColor="@drawable/text_color_seletor"
+            android:textSize="@dimen/chongzhi_textsize2" />
+    </LinearLayout>
+
+</LinearLayout>

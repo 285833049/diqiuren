@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_background"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <com.earthman.app.widget.CircleImageView
+                    android:id="@+id/iv_icon"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="30dp" />
+
+                <TextView
+                    android:id="@+id/tv_nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:lines="1"
+                    android:text="xxx"
+                    android:textColor="@color/black_0"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_card_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="xxxxxxxxx"
+                    android:textColor="@color/black_6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@color/wite"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mine_transfer_amount"
+                    android:textColor="@color/black_0" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <EditText
+                        android:id="@+id/et_transfer_money"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@color/wite"
+                        android:hint="0"
+                        android:inputType="number"
+                        android:textColor="@color/black_0"
+                        android:textColorHint="@color/black_c"
+                        android:textSize="40sp" />
+
+                    <TextView
+                        android:id="@+id/tv_currency_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/currency_activation"
+                        android:textColor="@color/black_9"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/black_e" />
+
+                <EditText
+                    android:id="@+id/et_transfer_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:hint="@string/mine_transfer_money_remak_hint"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_confirm_transfer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/light_btn_selector"
+                android:gravity="center"
+                android:padding="@dimen/login_button_padding"
+                android:text="@string/mine_confirm_transfter"
+                android:textColor="@color/wite"
+                android:textSize="@dimen/regist_size" />
+
+            <Button
+                android:id="@+id/btn_change_payment"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center"
+                android:background="@null"
+                android:text="x"
+                android:layout_marginTop="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+</LinearLayout>

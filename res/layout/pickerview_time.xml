@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="30dp"
+    android:background="@drawable/time_shape"
+    android:layout_marginRight="30dp"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        layout="@layout/data_pick_top_bar" />
+
+    <LinearLayout
+        android:id="@+id/timepicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_sahpe2"
+        android:orientation="horizontal" >
+
+        <com.earthman.app.widget.timepickerview.WheelView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/year"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E6E3E3" />
+
+        <com.earthman.app.widget.timepickerview.WheelView
+            android:id="@+id/month"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#E6E3E3" />
+
+        <com.earthman.app.widget.timepickerview.WheelView
+            android:id="@+id/day"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+      
+
+        <com.earthman.app.widget.timepickerview.WheelView
+            android:id="@+id/hour"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+
+        <com.earthman.app.widget.timepickerview.WheelView
+            android:id="@+id/min"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        layout="@layout/data_pick_footer" />
+
+</LinearLayout>

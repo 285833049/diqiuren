@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+     <TextView
+        android:id="@+id/tv_introduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="5dp"
+        android:text="简介:"
+        android:textColor="@color/gray" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/gray" />
+
+    <ImageView
+        android:id="@+id/iv_photo_upload"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/photo_upload_iv"/>
+
+</LinearLayout>

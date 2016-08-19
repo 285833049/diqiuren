@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp" >
+
+        <com.earthman.app.widget.RoundCornerImageView
+            android:id="@+id/iv_head"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/avatar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/tv_card_id"
+                    style="@style/CommonViewTheme"
+                    android:text="AA0000001"
+                    android:textColor="@color/tab_text_hover"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_create_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="2016-09-09"
+                    android:textColor="@color/black_9"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_nickname"
+                    style="@style/CommonViewTheme"
+                    android:layout_below="@id/tv_card_id"
+                    android:layout_marginTop="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="张三"
+                    android:textColor="@color/number6"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_wishes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_margin_left_right"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="我从来没有想到会遇到这种场面，从进人这个迷局开始，从来没有出现过同伴不信任我这样的事情。 一路过来，我一直怀疑这个怀疑那个.如今也终于轮到我被怀疑了吗？ 不，这绝对不可以，如果我的同伴不再信任我，那我在这个谜闭里所有能够依靠的东西就都没了。——南派三叔《盗墓笔记》"
+                android:textColor="@color/black3"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

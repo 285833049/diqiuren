@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_sahpe"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/cz_dialog_title"
+                android:textColor="@color/black1"
+                android:textSize="@dimen/cz_dialog_title" />
+
+            <ImageView
+                android:id="@+id/iv_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:padding="@dimen/main_margin_left_right"
+                android:src="@drawable/close" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/main_margin_left_right" >
+
+            <ImageView
+                android:id="@+id/iv_flower"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_flower_1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/main_margin_left_right"
+                android:layout_toRightOf="@+id/iv_flower"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tv_flower_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="怀念"
+                        android:textColor="#887877"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/tv_indate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="(有效期7天)"
+                        android:textColor="@color/red2"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:text="@string/xianhua_dialog1"
+                        android:textColor="@color/cz_dialog"
+                        android:textSize="@dimen/cz_dialog_normal" />
+
+                    <TextView
+                        android:id="@+id/tv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="15dp"
+                        android:text="2 地球币"
+                        android:textColor="@color/cz_dialog"
+                        android:textSize="@dimen/cz_dialog_normal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/xianhua_dialog3"
+                        android:textColor="@color/black_3" />
+
+                    <ImageView
+                        android:id="@+id/iv_subtract"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/black_6"
+                        android:src="@drawable/jian" />
+
+                    <TextView
+                        android:id="@+id/tv_pay_num"
+                        android:layout_width="50dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/wite"
+                        android:gravity="center"
+                        android:text="1" />
+
+                    <ImageView
+                        android:id="@+id/iv_add"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@color/black_6"
+                        android:src="@drawable/jia" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+            android:background="#E0E0E0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/main_margin_left_right"
+            android:orientation="horizontal"
+            android:padding="@dimen/main_margin_left_right" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cz_dialog_dingdan_detial"
+                android:textColor="@color/cz_dialog"
+                android:textSize="@dimen/cz_dialog_normal" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="鲜花支付"
+                android:textColor="@color/cz_dialog"
+                android:textSize="@dimen/cz_dialog_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_pay_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/main_margin_left_right"
+                android:text="支付金额：8地球币"
+                android:textColor="@color/cz_dialog"
+                android:textSize="@dimen/cz_dialog_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="@dimen/main_margin_left_right"
+                android:layout_marginRight="@dimen/main_margin_left_right"
+                android:background="#E0E0E0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/cz_dialog_password"
+                android:textColor="@color/cz_dialog"
+                android:textSize="@dimen/cz_dialog_normal" />
+        </LinearLayout>
+
+        <com.earthman.app.widget.passwordview.GridPasswordView
+            android:id="@+id/gpv_normal"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_pay_mode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="地球币"
+                android:textColor="@color/title_background"
+                android:textSize="@dimen/cz_dialog_normal" />
+
+            <TextView
+                android:id="@+id/tv_change_pay_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:text="@string/cz_dialog_change"
+                android:textColor="@color/title_background"
+                android:textSize="@dimen/cz_dialog_normal" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

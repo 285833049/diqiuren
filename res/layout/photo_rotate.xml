@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black5"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:gravity="center_horizontal"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:text="@string/cancel"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_anti_rotate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/anti_clock_rotate"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_rotate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/clock_rotate"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@null"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:gravity="center_horizontal"
+        android:text="@string/save"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+</LinearLayout>

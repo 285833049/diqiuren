@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_object"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <com.earthman.app.widget.CircleImageView
+            android:id="@+id/iv_object_head"
+            style="@style/CircleObjectStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:alpha="1"
+            android:background="@drawable/ic_unhead" />
+
+        <TextView
+            android:id="@+id/tv_object_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:shadowColor="#333333"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="5"
+            android:text="王二"
+            android:textColor="@android:color/white"
+            android:textSize="8sp" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_background"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true" >
+
+    <include layout="@layout/title_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/zhuanzhang_account_name"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/et_zhanzhang_to_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="@string/zhuanzhang_account_hint"
+            android:lines="1"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/zhuanzhang_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/light_btn_selector"
+        android:gravity="center"
+        android:padding="@dimen/login_button_padding"
+        android:text="下一步"
+        android:textColor="@color/wite"
+        android:textSize="@dimen/regist_size" />
+
+</LinearLayout>

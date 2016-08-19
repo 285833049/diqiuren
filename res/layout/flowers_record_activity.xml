@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f7f7"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true" >
+
+    <include layout="@layout/title_layout" />
+
+    <include layout="@layout/search_layout" />
+
+    <com.earthman.app.pulltoreflesh.XListView
+        android:id="@+id/lv_flowers"
+        style="@style/CommonListViewTheme"
+        android:background="@color/wite"
+        android:divider="@color/main_tab_bg"
+        android:dividerHeight="0.5dp" >
+    </com.earthman.app.pulltoreflesh.XListView>
+
+</LinearLayout>

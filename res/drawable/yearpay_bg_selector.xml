@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_selected="true">
+        <shape >
+            <corners
+                android:topRightRadius="4dp"
+                android:bottomRightRadius="4dp">
+            </corners>
+            <solid android:color="@color/tab_text_hover"/>
+        </shape>
+    </item>
+    
+    <item android:state_checked="true">
+        <shape >
+             <corners
+                android:topRightRadius="4dp"
+                android:bottomRightRadius="4dp">
+            </corners>
+            <solid android:color="@color/tab_text_hover"/>
+        </shape>
+    </item>
+    
+    <item android:state_pressed="true">
+        <shape >
+             <corners
+                android:topRightRadius="4dp"
+                android:bottomRightRadius="4dp">
+            </corners>
+            <solid android:color="@color/tab_text_hover"/>
+        </shape>
+    </item>
+    
+    <item>
+        <shape >
+             <corners
+                android:topRightRadius="4dp"
+                android:bottomRightRadius="4dp">
+            </corners>
+            <stroke android:color="@color/tab_text_hover"
+                android:width="0.5dp"/>
+            <solid android:color="@android:color/white"/>
+        </shape>
+    </item>
+
+</selector>

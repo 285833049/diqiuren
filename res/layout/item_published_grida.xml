@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+     android:background="@drawable/module_bg_selector"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/item_grida_image"
+        android:layout_width="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_height="match_parent"/>
+    <TextView 
+        android:id="@+id/tv_no_display_num"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="+9"
+        android:textColor="@color/wite"
+        android:gravity="center"
+        android:textSize="36sp"
+        android:background="@drawable/photo_shade"
+        android:alpha="0.5"
+        android:visibility="gone"/>
+
+</FrameLayout>

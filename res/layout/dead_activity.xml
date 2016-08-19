@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.earthman.app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/dead_title_layout" />
+
+    <ScrollView
+        android:id="@+id/sv_parent_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp" >
+
+                <com.earthman.app.widget.DrawFlowers
+                    android:id="@+id/drawFlowers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dynamic_beijing" />
+
+                <com.earthman.app.widget.CircleImageView
+                    android:id="@+id/iv_head"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/youke"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="1dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp" >
+
+                <com.earthman.app.widget.HorizontalListView
+                    android:id="@+id/lv_flowers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    style="@style/CommonViewTheme"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/navigate_left" />
+
+                <ImageView
+                    style="@style/CommonViewTheme"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/navigate_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="#EEEEEE" />
+
+            <RelativeLayout
+                android:id="@+id/rl_add_wishes"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/login_item_h"
+                android:background="@color/wite" >
+
+                <TextView
+                    style="@style/mine_item_text_style"
+                    android:layout_marginLeft="@dimen/main_margin_left_right"
+                    android:text="写寄语" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/main_margin_left_right"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:src="@drawable/right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_tribute_record"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#EEEEEE" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/main_margin_left_right"
+                    android:text="敬献记录" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:text="更多>>"
+                    android:textColor="@color/black_9"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <com.earthman.app.widget.MyListView
+                android:id="@+id/lv_tribute_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@color/black_e"
+                android:dividerHeight="1px"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" >
+            </com.earthman.app.widget.MyListView>
+
+            <RelativeLayout
+                android:id="@+id/rl_wishes"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#EEEEEE" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/main_margin_left_right"
+                    android:text="寄语" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:text="更多>>"
+                    android:textColor="@color/black_9"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <com.earthman.app.widget.MyListView
+                android:id="@+id/lv_wishes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@color/black_e"
+                android:dividerHeight="1px"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" >
+            </com.earthman.app.widget.MyListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

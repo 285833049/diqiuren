@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="20dp" >
+
+    <TextView
+        android:id="@+id/choose_year"
+        style="@style/CommonViewTheme"
+        android:text="@string/choose_year"
+        android:textColor="@color/black1"
+        android:textSize="12sp" />
+
+    <TextView
+        style="@style/CommonViewTheme"
+        android:layout_alignParentRight="true"
+        android:text="@string/ten_peryear"
+        android:textColor="@color/red1"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_year"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/year_bg"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/year"
+            style="@style/CommonViewTheme"
+            android:text="@string/one_year"
+            android:textSize="14sp" />
+
+        <ImageView
+            style="@style/CommonViewTheme"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_year"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:hint="@string/input_nianfen"
+        android:inputType="number"
+        android:maxLength="3"
+        android:paddingLeft="15dp"
+        android:paddingRight="0dp"
+        android:textColorHint="@color/black5"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <View
+        android:id="@+id/underline"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_below="@id/et_year"
+        android:background="@drawable/blue_line"
+        android:visibility="gone" />
+
+</RelativeLayout>

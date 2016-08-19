@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/tv_setgroup1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:gravity="center_vertical"
+            android:text="@string/set_groups1"
+            android:textColor="@color/black4"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/friend_beizhu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_setgroup1"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/set_groups_hint1"
+            android:textColor="@color/personal_detial_2"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/tv_setgroup2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:gravity="center_vertical"
+            android:text="关     系:"
+            android:textColor="@color/black4"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/relative_friend"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/tv_setgroup2"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/set_groups_hint2"
+            android:textColor="@color/personal_detial_2"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_add_quanzi"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <TextView
+            android:id="@+id/tv_setgroup3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:gravity="center_vertical"
+            android:text="分     组:"
+            android:textColor="@color/black4"
+            android:textSize="13sp" />
+
+       <TextView
+           android:id="@+id/quanzitype"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/iv_setgroup1"
+            android:layout_toRightOf="@+id/tv_setgroup3"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="@string/set_groups_hint3"
+            android:textColor="@color/personal_detial_2"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/iv_setgroup1"
+            style="@style/regiet_item_img_right_style"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+</LinearLayout>

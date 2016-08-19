@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_background"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true" >
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wite" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:text="@string/change_phone_now"
+            android:textColor="@color/black3" />
+
+        <TextView
+            android:id="@+id/change_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+             android:layout_margin="20dp"
+            android:textColor="@color/black3" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/change_phoen_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/light_btn_selector"
+        android:gravity="center"
+        android:padding="@dimen/login_button_padding"
+        android:text="@string/regist"
+        android:textColor="@color/wite"
+        android:textSize="@dimen/regist_size" />
+
+</LinearLayout>

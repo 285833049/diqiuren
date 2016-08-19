@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp" >
+
+        <com.earthman.app.widget.RoundCornerImageView
+            android:id="@+id/iv_head"
+            android:layout_width="@dimen/friend_icon_h_w"
+            android:layout_height="@dimen/friend_icon_h_w"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tv_nickname"
+            style="@style/CommonViewTheme"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="100dp"
+            android:layout_toRightOf="@id/iv_head"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/black2"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btn_add"
+            style="@style/CommonViewTheme"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/light_btn_selector"
+            android:focusable="false"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:text="@string/add_friend"
+            android:textColor="@color/wite"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_added"
+            style="@style/CommonViewTheme"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/added"
+            android:textColor="@color/number6"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

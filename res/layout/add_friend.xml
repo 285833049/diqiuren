@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wite"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <EditText
+        android:id="@+id/et_add_friend_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="40dp"
+        android:background="@null"
+        android:drawableLeft="@drawable/tianjiasousuo"
+        android:drawablePadding="20dp"
+        android:hint="@string/add_friend_hint"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:singleLine="true"
+        android:textColor="@color/black5"
+        android:textColorHint="@color/black5"
+        android:textSize="12sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/blue_line" />
+
+    <TextView
+        android:id="@+id/tv_space"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/main_tab_bg" />
+
+    <com.earthman.app.pulltoreflesh.XListView
+        android:id="@+id/lv_friend"
+        style="@style/CommonListViewTheme"
+        android:listSelector="@drawable/list_item_selector"
+        android:cacheColorHint="@null"
+        android:divider="@color/main_tab_bg"
+        android:dividerHeight="1px" >
+    </com.earthman.app.pulltoreflesh.XListView>
+
+</LinearLayout>

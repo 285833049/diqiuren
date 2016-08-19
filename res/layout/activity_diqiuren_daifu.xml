@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_background"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true" >
+
+    <include layout="@layout/title_layout" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/line_background"
+        android:layout_margin="10dp"
+        android:text="@string/daifu_tips"
+        android:textColor="@color/video_text_color"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/friend_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/wite"
+        android:hint="@string/daifu_phone_tips"
+        android:lines="1"
+        android:textColorHint="@color/edit_text_hint"
+        android:textSize="14sp" />
+
+    <include layout="@layout/line_one_gray" />
+
+    <EditText
+        android:id="@+id/friend_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+         android:background="@color/wite"
+        android:hint="@string/daifu_liuyan_tips"
+        android:lines="1"
+        android:textColorHint="@color/edit_text_hint"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/daifu_commit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/light_btn_selector"
+        android:gravity="center"
+        android:padding="@dimen/login_button_padding"
+        android:text="@string/daifu_commit"
+        android:textColor="@color/wite"
+        android:textSize="@dimen/regist_size" />
+
+</LinearLayout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/module_bg_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/main_margin_left_right" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <com.earthman.app.widget.RoundCornerImageView
+                android:id="@+id/user_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/main_margin_left_right"
+                android:layout_marginTop="@dimen/main_margin_left_right"
+                android:src="@drawable/default_avatar" />
+
+            <TextView
+                android:id="@+id/user_nick"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/user_icon"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/user_icon"
+                android:text="繁华"
+                android:textColor="@color/title_background"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/creadtime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/user_nick"
+                android:layout_below="@+id/user_nick"
+                android:layout_marginTop="5dp"
+                android:text="10分钟前 "
+                android:textColor="@color/dialog_text_c"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/dynamic_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:padding="5dp"
+                android:text="删除"
+                android:textColor="@color/title_background"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/dynamic_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user_icon"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="我aa"
+                android:textColor="@color/black3"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/line_background_touming"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/tv_transfer_nickname"
+            style="@style/CommonViewTheme"
+            android:textColor="@color/tab_text_hover"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_transfer_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/weak_black"
+            android:layout_toRightOf="@id/tv_transfer_nickname"
+            android:textSize="12sp" />
+
+        <com.earthman.app.widget.MyGridView
+            android:id="@+id/transfer_dynamic_images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="2dp"
+            android:verticalSpacing="2dp"
+            android:layout_below="@id/tv_transfer_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.earthman.app.widget.MyGridView
+        android:id="@+id/dynamic_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        style="@style/CommonViewTheme"
+        android:padding="15dp"
+        android:textColor="@color/black3"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/black_c" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_priser"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/iv_priser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/dianzan" />
+
+            <TextView
+                android:id="@+id/like_dianzan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="1123"
+                android:textColor="@color/dialog_text_c"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:background="@color/line_background" />
+
+        <TextView
+            android:id="@+id/zhuanfa"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/zhuanfa"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="@string/dynamic_share"
+            android:textColor="@color/dialog_text_c"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@color/line_background" />
+
+        <TextView
+            android:id="@+id/communt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/pinglun"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="@string/dynamic_comment"
+            android:textColor="@color/dialog_text_c"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_background" />
+
+    <com.earthman.app.widget.MyCommentListView
+        android:id="@+id/lv_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="#10000000"
+        android:divider="@null" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:background="@drawable/bg_jianbian" />
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_e"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/rl_circle_create"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/list_item_selector"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/circle_create"
+            android:textColor="@color/black_9"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/ic_arrows" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_circle_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/black_e"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:text="@string/circle_existing"
+            android:textColor="@color/black_6"
+            android:textSize="12sp" />
+
+        <ListView
+            android:id="@+id/lv_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@android:color/transparent"
+            android:divider="@color/black_e"
+            android:dividerHeight="1px"
+            android:listSelector="@drawable/list_item_selector" />
+    </LinearLayout>
+
+</LinearLayout>

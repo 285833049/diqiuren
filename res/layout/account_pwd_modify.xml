@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f5f6"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true" >
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_item_h"
+        android:layout_marginTop="@dimen/personal_detail_top_view"
+        android:background="@color/wite"
+        android:paddingLeft="@dimen/main_margin_left_right" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/old_password"
+            android:textColor="@color/personal_detial_2"
+            android:textSize="@dimen/personal_tipst_textsize" />
+
+        <EditText
+            android:id="@+id/psw_modify_old"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/personal_margin_left"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="原密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:layout_toLeftOf="@+id/forget_password_btn"
+            android:textColor="@color/personal_detial_1"
+            android:textSize="@dimen/personal_tipst_textsize" />
+
+        <TextView
+            android:id="@+id/forget_password_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="@string/forget_psw"
+            android:textColor="@color/tab_text_hover"
+            android:textSize="@dimen/personal_tipst_textsize" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_item_h"
+        android:layout_marginTop="@dimen/personal_detail_top_view"
+        android:background="@color/wite"
+        android:paddingLeft="@dimen/main_margin_left_right" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/new_password"
+            android:textColor="@color/personal_detial_2"
+            android:textSize="@dimen/personal_tipst_textsize" />
+
+        <EditText
+            android:id="@+id/modify_psw1_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/personal_margin_left"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textColor="@color/personal_detial_1"
+            android:textSize="@dimen/personal_tipst_textsize" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_item_h"
+        android:layout_marginTop="@dimen/personal_detail_top_view"
+        android:background="@color/wite"
+        android:paddingLeft="@dimen/main_margin_left_right" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/confirm_password"
+            android:textColor="@color/personal_detial_2"
+            android:textSize="@dimen/personal_tipst_textsize" />
+
+        <EditText
+            android:id="@+id/modify_psw2_new"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/personal_margin_left"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:textColor="@color/personal_detial_1"
+            android:textSize="@dimen/personal_tipst_textsize" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_item_h"
+        android:background="@color/main_tab_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/main_margin_left_right"
+        android:paddingRight="@dimen/main_margin_left_right"
+        android:text="@string/account_pwd_prompt"
+        android:textColor="@color/personal_detial_1"
+        android:textSize="@dimen/personal_tipst_textsize" />
+
+    <Button
+        android:id="@+id/modify_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/light_btn_selector"
+        android:gravity="center"
+        android:padding="@dimen/login_button_padding"
+        android:text="@string/confirm_modify"
+        android:textColor="@color/wite"
+        android:textSize="@dimen/regist_size" />
+
+    <include layout="@layout/line_one_gray" />
+
+</LinearLayout>

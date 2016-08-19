@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_background"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/account_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@drawable/module_bg_selector" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/myaccount_info_id" />
+
+        <TextView          
+            android:id="@+id/tv_account"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+            android:text="aA10101"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:id="@+id/card_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@drawable/module_bg_selector" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/member_validity_period" />
+
+        <TextView
+            android:id="@+id/tv_duedate"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+            android:textColor="@color/tab_text_hover" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:id="@+id/chongzhi_myaccount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@drawable/module_bg_selector" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/myaccount_info_regist_time" />
+
+        <TextView
+            android:id="@+id/tv_createdat"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/activation_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/light_btn_selector"
+        android:gravity="center"
+        android:padding="@dimen/login_button_padding"
+        android:text="@string/mine_jihuo"
+        android:textColor="@color/wite"
+        android:textSize="@dimen/regist_size" />
+
+</LinearLayout>

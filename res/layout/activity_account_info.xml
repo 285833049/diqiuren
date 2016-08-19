@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@color/wite" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/myaccount_info" />
+
+        <TextView
+            android:id="@+id/myaccount_earthid"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@color/wite" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/myaccount_info_youxiaoqi" />
+
+        <TextView
+            android:id="@+id/myaccount_youxiaoqi"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@color/wite" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/myaccount_info_currencyatv" />
+
+        <TextView
+            android:id="@+id/tv_activate_currency_balance"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@color/wite" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/myaccount_info_currencyem" />
+
+        <TextView
+            android:id="@+id/tv_earth_currency_balance"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+            android:textColor="@color/red" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@color/wite" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/myaccount_info_regist_time" />
+
+        <TextView
+            android:id="@+id/myaccount_creattime"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/main_margin_left_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+</LinearLayout>

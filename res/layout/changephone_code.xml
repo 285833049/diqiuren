@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line_background"
+    android:orientation="vertical" 
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/title_layout" />
+
+    <TextView
+        android:id="@+id/change_phone_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/main_margin_left_right"
+        android:text="@string/change_phone_code_tips"
+        android:textColor="@color/black3"
+        android:textSize="13sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/wite"
+        android:padding="@dimen/main_margin_left_right" >
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="@string/code_text"
+            android:layout_toLeftOf="@+id/tv_get_code_again"
+            android:inputType="phone"
+            android:textColor="@color/black3"
+            android:textColorHint="@color/edit_text_hint"
+            android:textSize="13sp" />
+
+        <View
+            
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/tv_get_code_again"
+            android:background="@color/tab_text_hover" />
+
+        <TextView
+            android:id="@+id/tv_get_code_again"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/title_background"
+            android:textSize="13sp"
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/getcode_again" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/change_phoen_next3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/light_btn_selector"
+        android:gravity="center"
+        android:padding="@dimen/login_button_padding"
+        android:text="@string/regist"
+        android:textColor="@color/wite"
+        android:textSize="@dimen/regist_size" />
+
+</LinearLayout>

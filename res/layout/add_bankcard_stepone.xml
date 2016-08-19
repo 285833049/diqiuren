@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/main_tab_bg" 
+    android:fitsSystemWindows="true">
+    <include layout="@layout/title_layout"/>
+    
+    <TextView style="@style/CommonViewTheme"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="12sp"
+        android:textColor="@color/black1"
+        android:text="@string/input_cardnum"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wite"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView 
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/card_num"
+            android:textSize="14sp"
+            android:paddingTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="20dp"
+            android:textColor="@color/black1"/>
+        <EditText 
+            android:id="@+id/et_bankcardnum"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:background="@null"
+            android:inputType="number"
+            android:textSize="14sp"
+            android:textColorHint="@color/black5"
+            android:textColor="@color/black1"
+            android:hint="@string/bankcard_num"
+            android:paddingBottom="20dp"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wite"
+        android:orientation="horizontal"
+        android:layout_marginTop="0.5dp">
+        <TextView 
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/zhengjianleixing"
+            android:textSize="14sp"
+            android:paddingTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="20dp"
+            android:textColor="@color/black1"/>
+        <TextView  
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/black1"
+            android:layout_marginLeft="30dp"
+            android:text="@string/shenfenzheng"
+            android:paddingBottom="20dp"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wite"
+        android:orientation="horizontal"
+        android:layout_marginTop="0.5dp">
+        <TextView 
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="@string/shenfenzhenghao"
+            android:textSize="14sp"
+            android:paddingTop="20dp"
+            android:paddingLeft="15dp"
+            android:paddingBottom="20dp"
+            android:textColor="@color/black1"/>
+        <EditText 
+            android:id="@+id/et_idnum"
+            android:layout_marginLeft="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:background="@null"
+            android:inputType="number"
+            android:textSize="14sp"
+            android:textColorHint="@color/black5"
+            android:textColor="@color/black1"
+            android:hint="@string/zhengjianhao"
+            android:paddingBottom="20dp"/>    
+    </LinearLayout>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="0.5dp"
+        android:background="@color/wite">
+        <Button style="@style/CommonButton"
+            android:id="@+id/next"
+            android:layout_marginTop="20dp"
+            android:text="@string/regist"/>
+    </LinearLayout>
+    
+    
+</LinearLayout>

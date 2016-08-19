@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/personal_detial_head"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/personal_viewpager_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </android.support.v4.view.ViewPager>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="#50000000" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/her_talks"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="6dp"
+                    android:drawableTop="@drawable/dongtai"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/wite"
+                    android:textSize="11sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/line_background_touming" />
+
+                <RadioButton
+                    android:id="@+id/her_albums"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="6dp"
+                    android:drawableTop="@drawable/xiangce"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/wite"
+                    android:textSize="11sp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/line_background_touming" />
+
+                <RadioButton
+                    android:id="@+id/her_videos"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="6dp"
+                    android:drawableTop="@drawable/shipingeren"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:textColor="@color/wite"
+                    android:textSize="11sp" />
+
+                <View
+                    android:id="@+id/verticalline"
+                    android:layout_width="1dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/line_background_touming"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/her_email"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@null"
+                    android:drawablePadding="6dp"
+                    android:drawableTop="@drawable/email"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:text="@string/email"
+                    android:textColor="@color/wite"
+                    android:textSize="11sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

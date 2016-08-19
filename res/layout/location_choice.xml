@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/tab_text_hover" >
+
+        <Button
+            android:id="@+id/btn_back"
+            style="@style/CommonViewTheme"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="@drawable/light_btn_selector"
+            android:drawableLeft="@drawable/ic_back"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="@color/wite" />
+
+        <TextView
+            android:id="@+id/tv_left"
+            style="@style/CommonViewTheme"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btn_back"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/current_location"
+            android:textColor="@color/wite"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:visibility="gone"
+            android:text="@string/search"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/ll_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/btn_search"
+            android:layout_toRightOf="@id/btn_back"
+            android:background="@drawable/search_bg"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <Button
+                style="@style/CommonViewTheme"
+                android:background="@null"
+                android:drawableLeft="@drawable/search_drawable_selector"
+                android:paddingBottom="10dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/number6" />
+
+            <com.earthman.app.widget.sortListView.ClearEditText
+                android:id="@+id/filter_edit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:hint="@string/input_keyword"
+                android:paddingLeft="15dp"
+                android:textColor="@color/black1"
+                android:textColorHint="@color/number6"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:drawableLeft="@drawable/sousuo"
+            android:background="@null"
+            android:contentDescription="@string/app_name" />
+    </RelativeLayout>
+    <FrameLayout 
+        android:id="@+id/framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+    </FrameLayout>
+    
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/main_margin_left_right"
+    android:layout_marginRight="@dimen/main_margin_left_right" >
+
+    <LinearLayout
+        android:id="@+id/earth_man_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/title_margin"
+        android:layout_marginTop="@dimen/title_margin"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/fc_title_h" >
+
+            <LinearLayout
+                android:id="@+id/video_get_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/main_margin_left_right"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_rank"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/eyes"
+                    android:drawablePadding="5dp"
+                    android:text="@string/earth_man_fengcai"
+                    android:textColor="@color/black1"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/main_margin_left_right"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/right_arrow"
+                    android:text="@string/get_more"
+                    android:textColor="@color/video_get_more_color"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.earthman.app.widget.MyGridView
+        android:id="@+id/main_gv_earthman"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/earth_man_title"
+        android:numColumns="4"
+        android:scrollbars="none" />
+
+</RelativeLayout>

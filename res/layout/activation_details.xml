@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true" >
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@color/wite" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/myaccount_info_id" />
+
+        <TextView
+            android:id="@+id/cardID"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+             />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@color/wite" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/application_date" />
+
+        <TextView
+            android:id="@+id/creadtime"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+             />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@color/wite" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/activite_info_yuer" />
+
+        <TextView
+            android:id="@+id/fee"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/red" />
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+            android:text="元" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@color/wite" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/message" />
+
+        <TextView
+            android:id="@+id/message"
+            style="@style/mine_item_text_style"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+             />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/go_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/light_btn_selector"
+        android:gravity="center"
+        android:padding="@dimen/login_button_padding"
+        android:text="@string/go_pay"
+        android:textColor="@color/wite"
+        android:textSize="@dimen/regist_size" />
+
+</LinearLayout>

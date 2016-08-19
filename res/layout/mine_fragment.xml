@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.earthman.app.widget.MyListView
+                android:id="@+id/lv_content"
+                android:layout_width="match_parent"
+                android:divider="@color/black_c"
+                android:dividerHeight="1px"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/mine_login_out"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/light_btn_selector"
+                android:gravity="center"
+                android:padding="@dimen/login_button_padding"
+                android:text="@string/mine_tuichu"
+                android:textColor="@color/wite"
+                android:textSize="@dimen/regist_size" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

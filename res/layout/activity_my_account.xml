@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true" >
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:id="@+id/account_info"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@drawable/module_bg_selector" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/myaccount_info" />
+
+        <ImageView
+            style="@style/regiet_item_img_right_style"
+            android:layout_gravity="center"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:id="@+id/card_list"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@drawable/module_bg_selector" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/myaccount_bank_list" />
+
+        <ImageView
+            style="@style/regiet_item_img_right_style"
+            android:layout_gravity="center"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:id="@+id/chongzhi_myaccount"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@drawable/module_bg_selector" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/myaccount_recharge" />
+
+        <ImageView
+            style="@style/regiet_item_img_right_style"
+            android:layout_gravity="center"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:id="@+id/personal_withdrawals_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@drawable/module_bg_selector" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/myaccount_tixian" />
+
+        <ImageView
+            style="@style/regiet_item_img_right_style"
+            android:layout_gravity="center"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:id="@+id/account_change_phoen"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@drawable/module_bg_selector" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/myaccount_jiechu_bind_phone" />
+
+        <ImageView
+            style="@style/regiet_item_img_right_style"
+            android:layout_gravity="center"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:id="@+id/account_qinqing_phone"
+        android:layout_width="match_parent"
+        android:visibility="invisible"
+        android:layout_height="@dimen/login_item_h"
+        android:background="@color/wite" >
+
+        <TextView
+            style="@style/mine_item_text_style"
+            android:layout_marginLeft="@dimen/main_margin_left_right"
+            android:text="@string/myaccount_qinqing" />
+
+        <ImageView
+            style="@style/regiet_item_img_right_style"
+            android:layout_gravity="center"
+            android:src="@drawable/right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray"
+        android:visibility="invisible" />
+
+</LinearLayout>

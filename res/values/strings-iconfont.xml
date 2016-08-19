@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 记录 -->
+    <string name="iconfont_record">&#xe603;</string>
+    <string name="iconfont_right_arrows">&#xe601;</string>
+    <string name="iconfont_close">&#xe602;</string>
+    <string name="iconfont_selected">&#xe600;</string>
+
+</resources>

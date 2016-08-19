@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:background="@android:color/black"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/play_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/biz_video_play"
+            android:visibility="gone"/>
+
+        <com.earthman.app.ui.activity.video.player.SuperVideoPlayer
+            android:id="@+id/video_player_item_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+        </com.earthman.app.ui.activity.video.player.SuperVideoPlayer>
+
+    </FrameLayout>
+
+
+</LinearLayout>

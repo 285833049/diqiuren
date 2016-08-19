@@ -1,0 +1,135 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/rl_video_no1"
+    android:layout_marginBottom="@dimen/video_margin_button"
+    android:orientation="horizontal"
+    android:paddingBottom="10dp" >
+
+    <RelativeLayout
+        android:id="@+id/rl_video_no2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_get_more"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/vide_no2"
+            android:layout_width="236dp"
+            android:layout_height="146dp"
+            android:layout_marginTop="@dimen/video_margin"
+            android:background="@drawable/video_2"
+            android:scaleType="centerCrop" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/vide_no2"
+            android:layout_alignParentRight="true"
+            android:background="@color/video_background" >
+
+            <TextView
+                android:id="@+id/tv_time2"
+                android:layout_width="@dimen/video_s_text_w"
+                android:layout_height="@dimen/video_s_text_h"
+                android:gravity="center"
+                android:text="3:23"
+                android:textColor="@color/wite"
+                android:textSize="@dimen/video_time_s_textsize"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vide_no2"
+            android:layout_marginTop="@dimen/video_margin"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="感恩的心《标题》"
+                android:textColor="@color/video_text_color"
+                android:textSize="@dimen/video_text_title_size" />
+
+            <TextView
+                android:id="@+id/tv_futitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/video_margin"
+                android:lines="2"
+                android:ellipsize="end"
+                android:textColor="@color/video_get_more_color"
+                android:textSize="@dimen/video_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_video_no3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/video_get_more"
+        android:layout_marginLeft="@dimen/video_margin"
+        android:layout_weight="1" >
+
+        <ImageView
+            android:id="@+id/vide_no3"
+            android:layout_width="236dp"
+            android:layout_height="146dp"
+            android:layout_marginTop="@dimen/video_margin"
+            android:background="@drawable/video_3"
+            android:scaleType="centerCrop" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/vide_no3"
+            android:layout_alignParentRight="true"
+            android:background="@color/video_background" >
+
+            <TextView
+                android:id="@+id/tv_time3"
+                android:layout_width="@dimen/video_s_text_w"
+                android:layout_height="@dimen/video_s_text_h"
+                android:gravity="center"
+                android:text="3:23"
+                android:textColor="@color/wite"
+                android:textSize="@dimen/video_time_s_textsize"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vide_no3"
+            android:layout_marginTop="@dimen/video_margin"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:text="感恩的心《标题》"
+                android:textColor="@color/video_text_color"
+                android:textSize="@dimen/video_text_title_size" />
+
+            <TextView
+                android:id="@+id/tv_futitle3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/video_margin"
+                android:lines="2"
+                android:ellipsize="end"
+                android:textColor="@color/video_get_more_color"
+                android:textSize="@dimen/video_text_size"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

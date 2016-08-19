@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/map_pop_bg"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tv_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="@color/black_e" />
+
+            <Button
+                android:id="@+id/btn_navi"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/map_btn_navi_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

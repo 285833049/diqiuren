@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+        
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/main_margin_left_right" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <com.earthman.app.widget.RoundCornerImageView
+                        android:id="@+id/v_user_icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/avatar" >
+                    </com.earthman.app.widget.RoundCornerImageView>
+
+                    <TextView
+                        android:id="@+id/tv_user_nick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/main_margin_left_right"
+                        android:layout_toRightOf="@+id/v_user_icon"
+                        android:textColor="@color/title_background"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/creadtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="@dimen/main_margin_left_right"
+                        android:textColor="@color/dialog_text_c"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    
+                    android:layout_marginTop="@dimen/main_margin_left_right"
+                    android:text="我从来没有想到会遇到这种场面，从进人这个迷局开始，从来没有出现过同伴不信任我这样的事情。 一路过来，我一直怀疑这个怀疑那个.如今也终于轮到我被怀疑了吗？ 不，这绝对不可以，如果我的同伴不再信任我，那我在这个谜闭里所有能够依靠的东西就都没了。——南派三叔《盗墓笔记》"
+                    android:textColor="@color/black3"
+                    android:textSize="13sp" />
+
+                <com.earthman.app.widget.MyGridView
+                    android:id="@+id/dynamic_images"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:horizontalSpacing="1dp"
+                    android:verticalSpacing="1dp" >
+                </com.earthman.app.widget.MyGridView>
+            </LinearLayout>
+        </LinearLayout>
+        
+        
+        <RelativeLayout
+        android:id="@+id/rl_transfer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/line_background_touming"
+        android:padding="15dp" >
+
+        <TextView
+            android:id="@+id/tv_transfer_nickname"
+            style="@style/CommonViewTheme"
+            android:textColor="@color/tab_text_hover"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_transfer_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/weak_black"
+            android:layout_toRightOf="@id/tv_transfer_nickname"
+            android:textSize="12sp" />
+
+        <com.earthman.app.widget.MyGridView
+            android:id="@+id/transfer_dynamic_images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="1dp"
+            android:verticalSpacing="1dp"
+            android:layout_below="@id/tv_transfer_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_location"
+        style="@style/CommonViewTheme"
+        android:padding="15dp"
+        android:textColor="@color/black3"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/line_background" />
+
+        <com.earthman.app.widget.viewpagerindicator.TabPageIndicator
+            android:id="@+id/viewpage_indecator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/dynamic_detial_viewpage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </android.support.v4.view.ViewPager>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@color/title_background" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_dianzan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/dianzan_iv_h"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/main_margin_left_right"
+                    android:background="@drawable/dianzanselector"
+                    android:clickable="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="@string/dynamic_dianzan"
+                    android:textColor="@color/wite" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/line_background" />
+
+            <LinearLayout
+                android:id="@+id/dynamicShare"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/main_margin_left_right"
+                    android:background="@drawable/fenxiangselector"
+                    android:clickable="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="@string/dynamic_share"
+                    android:textColor="@color/wite" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                android:background="@color/line_background" />
+
+            <LinearLayout
+                android:id="@+id/dynamicReplay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="@dimen/main_margin_left_right"
+                    android:background="@drawable/huifuselector"
+                    android:clickable="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center_vertical"
+                    android:text="@string/dynamic_comment"
+                    android:textColor="@color/wite" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

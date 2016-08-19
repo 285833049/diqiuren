@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f5f6"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_item_h"
+        android:layout_marginTop="@dimen/personal_detail_top_view"
+        android:background="@color/wite"
+        android:paddingLeft="@dimen/main_margin_left_right" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/mobile_num"
+            android:textColor="@color/personal_detial_2"
+            android:textSize="@dimen/personal_tipst_textsize" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/personal_margin_left"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入手机号码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:textColor="@color/personal_detial_1"
+            android:textSize="@dimen/personal_tipst_textsize" />
+
+        <TextView
+            android:id="@+id/modify_pwd_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/main_margin_left_right"
+            android:background="@drawable/rect_yuanjiao"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp"
+            android:text="获取验证码"
+            android:textColor="@color/wite"
+            android:textSize="@dimen/regist_text_size" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_one_gray" />
+
+    <include layout="@layout/line_one_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/personal_item_h"
+        android:layout_marginTop="@dimen/personal_detail_top_view"
+        android:background="@color/wite"
+        android:paddingLeft="@dimen/main_margin_left_right" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="@string/verification_code"
+            android:textColor="@color/personal_detial_2"
+            android:textSize="@dimen/personal_tipst_textsize" />
+
+        <EditText
+            android:id="@+id/et_smscode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/personal_margin_left"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:hint="请输入验证码"
+            android:maxLength="8"
+            android:textColor="@color/personal_detial_1"
+            android:textSize="@dimen/personal_tipst_textsize" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/light_btn_selector"
+        android:gravity="center"
+        android:padding="@dimen/login_button_padding"
+        android:text="@string/regist"
+        android:textColor="@color/wite"
+        android:textSize="@dimen/regist_size" />
+
+    <include layout="@layout/line_one_gray" />
+
+</LinearLayout>

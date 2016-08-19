@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <include layout="@layout/public_divide_5dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:paddingBottom="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="5dp"
+            android:text="@string/ranking_consume"
+            android:textColor="@color/black1"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_consume_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/right_arrow"
+            android:text="@string/more_paihang"
+            android:textColor="@color/video_get_more_color"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <com.earthman.app.widget.MyListView
+        android:id="@+id/lv_consume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/black_c"
+        android:dividerHeight="1px" />
+
+</LinearLayout>
